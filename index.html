@@ -5,20 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Estilos.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <script src="https://kit.fontawesome.com/53a903ef6e.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Examples Fisics</h1>
-    <h2 id="MRU">M.R.U</h2>
-    <div id="container">
-        <div id="container_platform">
-            <div id="platform_car">
-                <img src="imgs/car2.png" alt="car">
+        <nav id="nav-menu">
+          <h1 id="title">kinematics</h1>
+            <ul id="ul-menu">
+                <ul id="sections-ul"><p>Sections <i class="fa-solid fa-film"></i></p>
+                    <div id="section-ul__div">
+                        <li class="li-sections"><a href="#section-1">Home</a></li>
+                        <li class="li-sections"><a href="#section-2">M.R.U</a></li>
+                        <li class="li-sections"><a href="#section-2">M.R.U.A</a></li>
+                        <li class="li-sections"><a href="#section-2">M.C.U.A</a></li>
+                    </div>
+                </ul>
+                <li class="li-menu">Lenguajes <i class="fa-solid fa-language"></i></li>
+                <li class="li-menu">Contact <i class="fa-solid fa-address-book"></i></li>
+            </ul>
+        </nav>
+
+    <section id="section-1" class="section">
+        <div class="container-main">
+            <div class="main-element">
+                <h2>What is the kinematics?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga recusandae optio cumque nostrum dicta voluptatem !</p>
+                <button id="View-Moves"><a href="#sections-2">View kinematics</a></button>
+            </div>
+            <div class="main-element">
+                <img src="imgs/kinematics-1.webp" alt="">
             </div>
         </div>
-    </div>
-    <script src="JavaScript.js" type="module"></script>
+    </section>
+
+    <section id="section-2" class="section">
+        <div id="container-section2">
+            <div class="section-2__div">
+               <h2>M R U A</h2>
+
+                <div id="section-2__div-inputs">
+                    <input type="number" class="section2-inputs" placeholder="0 - Km/h" id="inputVo_MRUA"
+                    min="1">
+                    <input type="number" class="section2-inputs" placeholder="1000 - Km"
+                    id="inputRo_MRUA"
+                    min="1000">
+                    <button id="section2-button"> Use the car</button>
+                </div>
+
+               <div id="section-2__div-img">
+                    <img src="imgs/car1.webp" alt="" id="car_1">
+               </div>
+            </div>
+            <div class="section-2__div">
+                <p>0 Km</p>
+                <p>1000 Km</p>
+            </div>
+        </div>
+    </section>
+
 </body>
+
+<script src="JavaScript.js" type="module"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>
 
