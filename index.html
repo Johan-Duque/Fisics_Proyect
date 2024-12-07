@@ -16,8 +16,8 @@
                     <div id="section-ul__div">
                         <li class="li-sections"><a href="#section-1">Home</a></li>
                         <li class="li-sections"><a href="#section-2">M.R.U</a></li>
-                        <li class="li-sections"><a href="#section-2">M.R.U.A</a></li>
-                        <li class="li-sections"><a href="#section-2">M.C.U.A</a></li>
+                        <li class="li-sections"><a href="#section-3">M.R.U.A</a></li>
+                        <li class="li-sections"><a href="#section-4">M.C.U.A</a></li>
                     </div>
                 </ul>
                 <li class="li-menu">Lenguajes <i class="fa-solid fa-language"></i></li>
@@ -40,26 +40,53 @@
 
     <section id="section-2" class="section">
         <div id="container-section2">
-            <div class="section-2__div">
+
                <h2>M R U A</h2>
 
-                <div id="section-2__div-inputs">
-                    <input type="number" class="section2-inputs" placeholder="0 - Km/h" id="inputVo_MRUA"
-                    min="1">
-                    <input type="number" class="section2-inputs" placeholder="1000 - Km"
+               <div id="section-2__container-inputs">
+                <div class="section-2__div-inputs">
+                    <b>Velocity m/s</b>
+                    <input type="number" class="section2-inputs" placeholder="0 - m/s" id="inputVo_MRUA"
+                    min="50">
+                </div>
+
+                <div class="section-2__div-inputs">
+                    <b>Space m</b>
+                    <input type="number" class="section2-inputs" placeholder="1000 - m"
                     id="inputRo_MRUA"
                     min="1000">
-                    <button id="section2-button"> Use the car</button>
                 </div>
+
+                <div class="section-2__div-inputs">
+                    <b>Time in seconds</b>
+                    <input type="number" class="section2-inputs" placeholder="0s"
+                    min="1"
+                    disabled
+                    id="inputTime_MRUA">
+                </div>
+
+                
+                <div class="section-2__div-inputs">
+                    <b>Deceleration</b>
+                    <input type="number" class="section2-inputs" placeholder="0 m/s²"
+                    min="0.5"
+                    disabled
+                    id="inputDc_MRUA">
+                </div>
+
+                <div class="section-2__div-inputs">
+                    <button id="section2-button">Use the car</button> 
+                </div>
+               </div>  
 
                <div id="section-2__div-img">
                     <img src="imgs/car1.webp" alt="" id="car_1">
                </div>
-            </div>
-            <div class="section-2__div">
-                <p>0 Km</p>
-                <p>1000 Km</p>
-            </div>
+
+               <divs id="street-mrua">
+                    <p>0 m</p>
+                    <p id="space-final">1000 m</p>
+                </divs>
         </div>
     </section>
 

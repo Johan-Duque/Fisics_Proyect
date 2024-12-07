@@ -23,6 +23,7 @@ html {
     flex-direction: row;
     justify-content: center;
     background-color: var(--color-blue);
+    border-bottom: 2px solid var(--color-black);
 }
 
 #nav-menu #title{
@@ -38,7 +39,7 @@ html {
     align-items: center;
     justify-content: right;
     padding-right: 80px; 
-    font-size: 20px;
+    font-size: 20px;    
 }
 
 #nav-menu #ul-menu .li-menu{
@@ -182,30 +183,17 @@ html {
 
 /* --- Section 2 --- */
 
-
-
 #container-section2 {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    flex-wrap: nowrap;
-    margin: 0px auto;
-    align-items: center;
     background-image: url('imgs/city.jpg');
-}
-
-
-#container-section2 .section-2__div:nth-child(1){
     display: grid;
-    height: 80%;
-    width: 100%;
     grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(3, 33.3%);
+    grid-template-rows: repeat(4, 25%);
 }
 
-#container-section2 .section-2__div:nth-child(1) h2{
+
+#container-section2 h2{
     display: flex;
     grid-column: 1/6;
     align-items: center;
@@ -213,42 +201,92 @@ html {
     font-size: 50px;
     color: var(--color-white);
     font-weight: 999;
-    padding-top: 30px;
+    padding-top: 50px;
     text-shadow: 1px 1px 1px black;
 }
 
-#container-section2 .section-2__div:nth-child(1) #section-2__div-inputs{
+#container-section2 #section-2__container-inputs {
     display: flex;
+    flex-direction: row;
     grid-column: 1/6;
+    justify-content: space-between;
 }
 
-#container-section2 .section-2__div:nth-child(1) #section-2__div-inputs .section2-inputs{
-    margin: 5PX;
-    height: 30px;
-    width: 20%;
-    padding-left: 10px;
+#container-section2 .section-2__div-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
 
-#container-section2 .section-2__div:nth-child(1) #section-2__div-inputs #section2-button{
-    margin: 5PX;
-    height: 30px;
-    width: 20%;
-    text-align: center;
-    background-color: var(--color-blue);
+#container-section2 .section-2__div-inputs {
+    width: 100%;
     color: var(--color-white);
-    border: none;
+    font-weight: 999;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+}
+
+#container-section2 .section-2__div-inputs input{
+    padding-left: 5px;
+    color: var(--color-black);
+    height: 25px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+#container-section2 .section-2__div-inputs button{
+    padding-left: 5px;
+    color: var(--color-white);
+    background-color: var(--color-blue);
     border-radius: 5px;
+    border: 2px solid var(--color-black);
+    height: 50px;
+    width: 80%;
+    font-size: 18px;
     transition: .8s background;
+    text-align: center;
 }
 
-#container-section2 .section-2__div:nth-child(1) #section-2__div-inputs #section2-button:hover{
-    background-color: var(--color-white);
-    color: var(--color-blue);
-    border: 2px solid var(--color-blue);
+#container-section2 .section-2__div-inputs button:hover {
     cursor: pointer;
+    padding-left: 5px;
+    color: var(--color-blue);
+    background-color: var(--color-white);
+    border-radius: 5px;
+    border: 2px solid var(--color-blue);
+    font-size: 18px;
+    transition-duration: .8s;
 }
 
-#container-section2 .section-2__div:nth-child(1) #section-2__div-img{
+#container-section2 .section-2__div-inputs input::placeholder{
+    color: var(--color-blue);
+}
+
+#container-section2 .section-2__div-inputs #inputTime_MRUA{
+    background-color: rgb(20, 148, 35);
+    color: var(--color-white);
+}
+
+#container-section2 .section-2__div-inputs #inputTime_MRUA::placeholder{
+    background-color: rgb(20, 148, 35);
+    color: var(--color-white);
+}
+
+#container-section2 .section-2__div-inputs 
+#inputDc_MRUA{
+    background-color: red;
+    color: var(--color-white);
+}
+
+#container-section2 .section-2__div-inputs 
+#inputDc_MRUA::placeholder{
+    color: var(--color-white);
+}
+
+
+#container-section2 #section-2__div-img{
     display: flex;
     position: relative;
     top: 70px;
@@ -259,7 +297,7 @@ html {
     grid-row: 3/3;
 }
 
-#container-section2 .section-2__div:nth-child(1) img{
+#container-section2 img{
     display: inline-block;
     position: relative;
     width: 200px;
@@ -271,23 +309,18 @@ html {
     100%   {left: 84%}
 }
 
-#container-section2 .section-2__div:nth-child(2){
+#container-section2 #street-mrua{
     display: flex;
     flex-direction: row;
     background-image: url('imgs/street.webp');
-    height: 20%;
+    height: 100%;
     width: 100%;
     justify-content: space-between;
     padding: 50px;
     align-items: center;
     color: var(--color-white);
-}
-
-#container-section2 .section-2__div:nth-child(2) div{
-    width: 10%;
-    height: 30px;
-    background-color: var(--color-white);
-    
+    grid-column: 1/6;
+    grid-row: 4/4;
 }
 
 /* --- Responsive Design --- */
