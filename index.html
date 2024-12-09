@@ -9,7 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-        <nav id="nav-menu">
+
+       <!-- <nav id="nav-menu">
           <h1 id="title">kinematics</h1>
             <ul id="ul-menu">
                 <ul id="sections-ul"><p>Sections <i class="fa-solid fa-film"></i></p>
@@ -23,19 +24,157 @@
                 <li class="li-menu">Lenguajes <i class="fa-solid fa-language"></i></li>
                 <li class="li-menu">Contact <i class="fa-solid fa-address-book"></i></li>
             </ul>
-        </nav>
+        </nav> -->
+
+        <header class="header">
+            <nav class="nav container-header">
+               <div class="nav__data">
+                  <h1 href="#" class="nav__logo">
+                     <i class="fa-solid fa-brain"></i> kinematics
+                  </h1>
+                  
+                  <div class="nav__toggle" id="nav-toggle">
+                     <i class="fa-solid fa-bars" id="bars"></i>
+                  </div>
+               </div>
+   
+               <!--=============== NAV MENU ===============-->
+               <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+                     <li><a href="#section-1" class="nav__link"> <i class="fa-solid fa-house"></i> Home</a></li>
+   
+                     <!--=============== DROPDOWN 1 ===============-->
+                     <li class="dropdown__item">
+                        <div class="nav__link">
+                           <i class="fa-solid fa-film"></i> Sections 
+                        </div>
+   
+                        <ul class="dropdown__menu">
+                           <li>
+                              <a href="#section-2" class="dropdown__link">
+                                 <i class="ri-pie-chart-line"></i> MRUA
+                              </a>                          
+                           </li>
+   
+                           <li>
+                              <a href="#section-3" class="dropdown__link">
+                                 <i class="ri-arrow-up-down-line"></i> MP
+                              </a>
+                           </li>
+
+                           <li>
+                              <a href="#section-4" class="dropdown__link">
+                                 <i class="ri-arrow-up-down-line"></i> MCUA
+                              </a>
+                           </li>
+   
+                           <!--=============== DROPDOWN SUBMENU ===============-->
+
+                           <!-- <li class="dropdown__subitem">
+                              <div class="dropdown__link">
+                                 <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                              </div>
+   
+                              <ul class="dropdown__submenu">
+                                 <li>
+                                    <a href="#" class="dropdown__sublink">
+                                       <i class="ri-file-list-line"></i> Documents
+                                    </a>
+                                 </li>
+         
+                                 <li>
+                                    <a href="#" class="dropdown__sublink">
+                                       <i class="ri-cash-line"></i> Payments
+                                    </a>
+                                 </li>
+         
+                                 <li>
+                                    <a href="#" class="dropdown__sublink">
+                                       <i class="ri-refund-2-line"></i> Refunds
+                                    </a>
+                                 </li>
+                              </ul>
+                           </li> -->
+
+                           <!--================================================-->
+                        </ul> 
+                     </li> 
+                     
+                      <!--=============== OTHER ELEMENT ===============-->
+                      <!--=== <li><a href="#" class="nav__link">Products</a></li> ===-->
+                      <!--=============================================-->
+   
+                     <!--=============== DROPDOWN 2 ===============-->
+                     <li class="dropdown__item">
+                        <div class="nav__link" id="nav-lenguajes">
+                           <i class="fa-solid fa-language"></i> Lenguajes 
+                        </div>
+   
+                        <ul class="dropdown__menu">
+                           <li>
+                              <a href="#" class="dropdown__link">
+                                 English
+                              </a>                          
+                           </li>
+   
+                           <li>
+                              <a href="#" class="dropdown__link">
+                                 Spanish 
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+   
+                     <li><a href="#" class="nav__link"> <i class="fa-solid fa-address-book"></i> Contact</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
 
     <section id="section-1" class="section">
-        <div class="container-main">
-            <div class="main-element">
-                <h2>What is the kinematics?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga recusandae optio cumque nostrum dicta voluptatem !</p>
-                <button id="View-Moves"><a href="#sections-2">View kinematics</a></button>
-            </div>
-            <div class="main-element">
-                <img src="imgs/kinematics-1.webp" alt="">
-            </div>
-        </div>
+        <h2>What is the kinematics?</h2>
+        <p><b>kinematics, branch of physics and a subdivision of classical mechanics concerned with the geometrically possible motion of a body or system of bodies without consideration of the forces involved (i.e., causes and effects of the motions).</b></p>
+        <div class="card__container">
+            <article class="card__article">
+                <h3 class="card__h3">M R U A</h3>
+               <img src="imgs/car1.webp" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an acceleration .</span>
+               </div>
+               
+               <a href="#section-2" class="card__button">
+                  View More <i class="ri-arrow-right-line"></i>
+               </a>
+            </article>
+
+            <article class="card__article">
+                <h3 class="card__h3">M P</h3>
+               <img src="imgs/MP-section1-Photoroom.png" alt="image" class="card__img">
+
+               <div class="card__data">
+                <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an acceleration .</span>
+             </div>
+               
+               <a href="#" class="card__button">
+                  View More <i class="ri-arrow-right-line"></i>
+               </a>
+            </article>
+
+            <article class="card__article" id="MCUA-section1">
+                <h3 class="card__h3">M C U A</h3>
+               <img src="imgs/MRCU-section1.png" alt="image" class="card__img" id="MCUA-GIF">
+
+               <div class="card__data">
+                <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an acceleration .</span>
+             </div>
+               
+               <a href="#" class="card__button">
+                  View More <i class="ri-arrow-right-line"></i>
+               </a>
+            </article>
+         </div>
+        <audio src="audio/car_mrua.mp3" id="audio-car">
     </section>
 
     <section id="section-2" class="section">
@@ -46,29 +185,28 @@
                <div id="section-2__container-inputs">
                 <div class="section-2__div-inputs">
                     <b>Velocity m/s</b>
-                    <input type="number" class="section2-inputs" placeholder="0 - m/s" id="inputVo_MRUA"
-                    min="50">
+                    <input class="inputs_mrua" type="number" class="section2-inputs" placeholder="0 - m/s" id="inputVo_MRUA"
+                    min="50" >
                 </div>
 
                 <div class="section-2__div-inputs">
                     <b>Space m</b>
-                    <input type="number" class="section2-inputs" placeholder="1000 - m"
+                    <input class="inputs_mrua" type="number" class="section2-inputs" placeholder="1000 - m"
                     id="inputRo_MRUA"
                     min="1000">
                 </div>
 
                 <div class="section-2__div-inputs">
                     <b>Time in seconds</b>
-                    <input type="number" class="section2-inputs" placeholder="0s"
+                    <input class="inputs_mrua" type="number" class="section2-inputs" placeholder="0s"
                     min="1"
-                    disabled
                     id="inputTime_MRUA">
                 </div>
 
                 
                 <div class="section-2__div-inputs">
                     <b>Deceleration</b>
-                    <input type="number" class="section2-inputs" placeholder="0 m/s²"
+                    <input class="inputs_mrua" type="number" class="section2-inputs" placeholder="0 m/s²"
                     min="0.5"
                     disabled
                     id="inputDc_MRUA">
