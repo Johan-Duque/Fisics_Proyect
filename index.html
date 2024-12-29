@@ -9,23 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-
-       <!-- <nav id="nav-menu">
-          <h1 id="title">kinematics</h1>
-            <ul id="ul-menu">
-                <ul id="sections-ul"><p>Sections <i class="fa-solid fa-film"></i></p>
-                    <div id="section-ul__div">
-                        <li class="li-sections"><a href="#section-1">Home</a></li>
-                        <li class="li-sections"><a href="#section-2">M.R.U</a></li>
-                        <li class="li-sections"><a href="#section-3">M.R.U.A</a></li>
-                        <li class="li-sections"><a href="#section-4">M.C.U.A</a></li>
-                    </div>
-                </ul>
-                <li class="li-menu">Lenguajes <i class="fa-solid fa-language"></i></li>
-                <li class="li-menu">Contact <i class="fa-solid fa-address-book"></i></li>
-            </ul>
-        </nav> -->
-
         <header class="header">
             <nav class="nav container-header">
                <div class="nav__data">
@@ -132,49 +115,101 @@
          </header>
 
     <section id="section-1" class="section">
-        <h2>What is the kinematics?</h2>
+         <h2>What is the kinematics?</h2>
         <p><b>kinematics, branch of physics and a subdivision of classical mechanics concerned with the geometrically possible motion of a body or system of bodies without consideration of the forces involved (i.e., causes and effects of the motions).</b></p>
+    
         <div class="card__container">
-            <article class="card__article">
-                <h3 class="card__h3">M R U A</h3>
-               <img src="imgs/car1.webp" alt="image" class="card__img">
 
-               <div class="card__data">
-                  <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an acceleration .</span>
+            <article class="card__article" onclick="window.location.href = '#section-2'">
+
+               <div class="card-front face">
+                  <h3 class="card__h3">M R U A</h3>
+                  <img src="imgs/car1.webp" alt="image" class="card__img">
+    
+                  <div class="card__data">
+                     <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an acceleration .</span>
+                  </div>
+                  
+                  <button class="card__button card__button-front">
+                     View More <i class="ri-arrow-right-line"></i>
+                  </button>
                </div>
-               
-               <a href="#section-2" class="card__button">
-                  View More <i class="ri-arrow-right-line"></i>
-               </a>
-            </article>
 
-            <article class="card__article">
-                <h3 class="card__h3">M P</h3>
-               <img src="imgs/MP-section1-Photoroom.png" alt="image" class="card__img">
+               <div class="card-back face">
+                     <h3 class="card__h3">M R U A</h3>
+                     <img src="imgs/example-mrua.jpg" alt="">
 
-               <div class="card__data">
-                <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an acceleration .</span>
-             </div>
+                     <div class="card__data">
+                        <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta sequi molestiae et cupiditate corporis sed  cupiditate corporis sed.</span>
+                     </div>
+                  
+                  <button class="card__button card__button-back">
+                     Go Back <i class="ri-arrow-right-line"></i>
+                  </button>
+               </div>
+
+           </article>
+
+            <article class="card__article" onclick="window.location.href = '#section-3'">
+
+               <div class="card-front face">
+                  <h3 class="card__h3">M P</h3>
+                  <img src="imgs/MP-section1-Photoroom.png" alt="image" class="card__img">
+   
+                  <div class="card__data">
+                   <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an acceleration .</span>
+                  </div>
+                   <button class="card__button card__button-front">
+                     View More <i class="ri-arrow-right-line"></i>
+                  </button>
+                
+               </div>
+
+               <div class="card-back face">
+                  <h3 class="card__h3">M P</h3>
+                  
+                     <img src="imgs/example-mp.png" alt="" id="MP-BACK">
+
+                  <div class="card__data">
+                     <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta sequi molestiae et cupiditate corporis sed, illo voluptatibus .</span>
+                  </div>
                
-               <a href="#" class="card__button">
-                  View More <i class="ri-arrow-right-line"></i>
-               </a>
+               <button class="card__button card__button-back">
+                  Go Back <i class="ri-arrow-right-line"></i>
+               </button>
+            </div>
+
             </article>
 
             <article class="card__article" id="MCUA-section1">
-                <h3 class="card__h3">M C U A</h3>
-               <img src="imgs/MRCU-section1.png" alt="image" class="card__img" id="MCUA-GIF">
 
-               <div class="card__data">
-                <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an acceleration .</span>
-             </div>
+               <div class="card-front face">
+                  <h3 class="card__h3">M C U A</h3>
+                  <img src="imgs/MRCU-section1.png" alt="image" class="card__img" id="MCUA-GIF">
+   
+                  <div class="card__data">
+                     <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an acceleration .</span>
+                  </div>
+                   <button class="card__button card__button-front">
+                     View More <i class="ri-arrow-right-line"></i>
+                  </button>
+               </div>
+
+               <div class="card-back face">
+                  <h3 class="card__h3">M C U A</h3>
+                  <img src="imgs/example-mcua.jpg" alt="">
+
+                  <div class="card__data">
+                     <span class="card__price">Uniformly accelerated rectilinear motion is a movement where the speed is not constant because there is an Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta sequi molestiae et cupiditate corporis sed, illo voluptatibus</span>
+                  </div>
                
-               <a href="#" class="card__button">
-                  View More <i class="ri-arrow-right-line"></i>
-               </a>
+               <button class="card__button card__button-back">
+                  Go Back <i class="ri-arrow-right-line"></i>
+               </button>
+            </div>
+
             </article>
          </div>
-        <audio src="audio/car_mrua.mp3" id="audio-car">
     </section>
 
     <section id="section-2" class="section">
@@ -197,8 +232,8 @@
                 </div>
 
                 <div class="section-2__div-inputs">
-                    <b>Time in seconds</b>
-                    <input class="inputs_mrua" type="number" class="section2-inputs" placeholder="0s"
+                    <b>Time</b>
+                    <input class="inputs_mrua" type="number" class="section2-inputs" placeholder="0 s"
                     min="1"
                     id="inputTime_MRUA">
                 </div>
@@ -226,7 +261,39 @@
                     <p id="space-final">1000 m</p>
                 </divs>
         </div>
+        <audio src="audio/car_mrua.mp3" id="audio-car"></audio>
     </section>
+
+    <section id="section-3" class="section">
+      <div id="container-section3">
+
+             <h2>M P</h2>
+             <p id="max-height"></p>
+
+             <div id="section-3__div-inputs">
+               <b>Velocity</b>
+               <input type="number" id="inputVo_MP" class="section-3__inputs" placeholder="0 m/s" min="10">
+
+               <b>Time</b>
+               <input type="number" id="inputTime_MP" class="section-3__inputs" placeholder="0 s" disabled>
+
+               <b>Shoot Ball</b>
+                  <button id="section-3__button"> Shot </button>
+             </div>
+
+             <div id="section-3__div-img">
+               <img src="imgs/MP-section1-Photoroom.png" alt="" id="canon-section3">
+               <img src="imgs/ball-section3-removebg-preview.png" alt="" id="ball-section3">
+             </div>
+
+
+             <div id="section-3__floor">
+               <b >0 m</b>
+               <b id="space_mp"></b>
+             </div>
+      </div>
+      <audio src="audio/Cannon Sound Effect.mp3" id="audio-ball"></audio>
+  </section>
 
 </body>
 
