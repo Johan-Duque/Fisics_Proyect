@@ -1,0 +1,20 @@
+[
+    {
+        "Name" : "Johan",
+        "LastName" : "Duque",
+        "Age" : "19",
+        "password" : "1234"
+    },
+    {
+        "Name" : "Dariana",
+        "LastName" : "Duque",
+        "Age" : "21",
+        "password" : "1234"
+    },
+    {
+        "Name" : "Daniela",
+        "LastName" : "Duque",
+        "Age" : "26",
+        "password" : "1234"
+    }
+]
